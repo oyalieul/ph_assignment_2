@@ -70,33 +70,32 @@ nav ul li a {
     margin: 30px 0;
 }
 
+main {
+    width: 80%;
+    margin: 0 auto;
+    
+}
 
 /* section 1 style */
 .section-1 {
     display: flex;
     column-gap: 45px;
-    width: 80%;
-    margin: 0 auto;
     padding: 40px 0;
 }
 
 
-.images-div {
+.s1-image {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding-left: 60px;
 }
 
-.content-div {
+.s1-content {
     display: flex;
     align-items: center;
 }
 
-/* .content-div div{
-padding-left :40px ;
-    width: 70%; 
-} */
 
 /* section 1 title style */
 .section1-title {
@@ -126,10 +125,6 @@ padding-left :40px ;
 .section-2 {
     display: flex;
     column-gap: 10px;
-    width: 80%;
-    margin: 0 auto;
-    /* optional border */
-    /* border: 2px solid red; */
 }
 
 /* left part of the section 2*/
@@ -198,31 +193,154 @@ padding-left :40px ;
 /* section 2 button placement */
 .btn-position {
     width: 200px;
-    height:100px;
-    position:absolute;
-    top:75%;
+    height: 100px;
+    position: absolute;
+    top: 75%;
     right: 85%;
-    
+
 }
 
 
 /* section 3 styling */
-.section-3{
-
-}
-.s3-title{
-
+.section-3 {
+    margin-top: 80px;
 }
 
+.s3-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    margin-bottom: 25px;
+}
+
+.s3-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 100px;
+}
+
+.packet-container {
+
+    display: flex;
+    justify-content: space-between;
+    column-gap: 200px;
+    margin-bottom: 100px;
+}
+
+.packets {
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    padding: 50px 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    transition: transform 0.8s;
+
+}
+
+.packets:hover{
+    border: 2px solid red;
+    transform: rotate(360deg) scale(1.2); 
+}
+
+.packet-ico {
+    margin-bottom: 10px;
+}
+
+.packet-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.packet-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+/* section 4  */
+.s4-content {
+    text-align : center;
+
+}
+
+.s4-title{
+    font-size:30px;
+    margin-bottom: 10px;
+}
+
+.s4-description{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+.s4-images{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.s4-img{
+    filter: grayscale(100%);
+}
+
+/* bonus section  */
+.bonus{
+    text-align: center;
+    margin: 100px 0;
+    background-color: goldenrod;
+    color: white;
+    padding: 50px 0;
+    border-radius: 10px;
+}
+.bonus-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.bonus-description{
+    font-weight: 400;
+    font-size: 16px;
+    
+    margin-bottom: 40px;
+}
+
+input[type="text"], input[type="email"]{
+    margin-bottom: 10px;
+    padding:10px 20px;
+    border-radius: 10px;
+    width: 180px;
+    border: 0;
+}
+
+input[type="submit"]{
+    color: goldenrod;
+    background-color: white;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+/* styling footer */
+footer{
+    width: 80%;
+    margin: 0 auto;
+    background-color: beige;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
 
 
-
-
-
-
-
-
-
+.footer-text{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
 
 
 
@@ -254,6 +372,10 @@ padding-left :40px ;
         row-gap: 40px;
     }
 
+    .s1-image{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 
     /* section 1 images responsive */
     .images-div {
@@ -266,4 +388,42 @@ padding-left :40px ;
         text-align: center;
 
     }
+
+    /* section 2  */
+    .section-2{
+        flex-direction: column;
+    }
+
+    .s2-content{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    /* section 2 lady image part */
+    .s2-image{
+        width:100%;
+    }
+
+    /* section 3 */
+
+    .packet-container{
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+    .packets{
+        width:50%
+    }
+
+    .s4-images{
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+    }
+
+    .s4-img{
+        width: 100px;
+    }
+
+
 }
