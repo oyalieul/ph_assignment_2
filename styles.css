@@ -1,94 +1,218 @@
-*{
+* {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    /* max-width: 1240px; */
 }
 
 /* header-background color */
-header{
+header {
     background-color: beige;
 }
 
-.header{
+.header {
     width: 80%;
-    margin: 0  auto;
+    margin: 0 auto;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 0;
 }
 
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
 }
 
-nav ul li{
+nav ul li {
     margin: 0 20px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    color: black;   
+    color: black;
 }
 
-.heading-section{
+.heading-section {
     width: 50%;
     margin: 0 auto;
     text-align: center;
 }
 
-.heading-title{
+.heading-title {
     text-align: center;
     font-size: 64px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
-.heading-description{
+.heading-description {
     color: grey;
     margin-top: 30px;
 }
 
 /* button primary */
-.btn-primary{
+.btn-primary {
     background-color: goldenrod;
     color: white;
     border: 0;
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
     margin-top: 30px;
-    
+
 }
 
-.header img{ 
+.header img {
     width: 100%;
     margin: 30px 0;
 }
 
 
 /* section 1 style */
-.section-1{
+.section-1 {
     display: flex;
-    column-gap: 20px;
+    column-gap: 45px;
     width: 80%;
-    margin: 0  auto;
-    border: 1px solid pink;  
-    padding: 50px; 
+    margin: 0 auto;
+    padding: 40px 0;
 }
 
-.images-div{
+
+.images-div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
+    padding-left: 60px;
 }
 
-.content-div{
+.content-div {
+    display: flex;
+    align-items: center;
+}
+
+/* .content-div div{
+padding-left :40px ;
+    width: 70%; 
+} */
+
+/* section 1 title style */
+.section1-title {
+    font-size: 45px;
+}
+
+.span1 {
+    font-weight: 400;
+    color: #727272;
+}
+
+.span2 {
+    color: 131313;
+}
+
+.span3 {
+    color: goldenrod;
+}
+
+.section1-description {
+    margin-top: 30px;
+    line-height: 28px;
+}
+
+/* section 2 styling */
+
+.section-2 {
+    display: flex;
+    column-gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+    /* optional border */
+    /* border: 2px solid red; */
+}
+
+/* left part of the section 2*/
+.s2-content {
+    width: 40%;
+    padding-left: 50px;
+
+}
+
+.s2-title {
+    font-weight: 700;
+    font-size: 45px;
+    border-left: 8px solid goldenrod;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+.s2-description {
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+
+.box {
+    width: 90%;
+    height: 150px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 25px;
+    padding: 30px;
+}
+
+.box-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.box-description {
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* right part of the section 2 */
+.s2-image {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* placing button on image */
+.image-container {
+    text-align: right;
+    width: 80%;
+    position: relative;
+}
+
+.s2-image img {
+    width: 100%;
+}
+
+/* section 2 button placement */
+.btn-position {
+    width: 200px;
+    height:100px;
+    position:absolute;
+    top:75%;
+    right: 85%;
     
 }
 
 
+/* section 3 styling */
+.section-3{
+
+}
+.s3-title{
+
+}
 
 
 
@@ -104,19 +228,42 @@ nav ul li a{
 
 /* responsive for mobile */
 
-@media screen and (max-width:576px){
-    .heading-title{
+@media screen and (max-width:576px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul {
+        display: block;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .heading-title {
         font-size: 30px;
     }
 
 
-/* section 1 div flex in column */
-.section-1{
-    flex-direction: column;
-}
+    /* section 1 div flex in column */
+    .section-1 {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
 
     /* section 1 images responsive */
-    .images-div{
-        grid-template-columns: repeat(1,1fr);
+    .images-div {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 0;
+        justify-items: center;
+    }
+
+    .content-div {
+        text-align: center;
+
     }
 }
